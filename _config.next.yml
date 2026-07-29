@@ -1,0 +1,94 @@
+# NexT 主题配置 - 还原原博客设置
+
+favicon:
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
+
+scheme: Muse
+
+darkmode: false
+
+menu:
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+
+sidebar:
+  position: left
+  width: 320
+  display: post
+  padding: 18
+  offset: 12
+
+avatar:
+  url: /images/avatar.jpg
+  rounded: false
+  opacity: 1
+  rotated: false
+
+social:
+  GitHub: https://github.com/hiahia0314 || fab fa-github
+  E-Mail: mailto:231250037@smail.nju.edu.cn || fa fa-envelope
+
+social_icons:
+  enable: true
+  icons_only: false
+  transition: false
+
+footer:
+  since:
+  icon:
+    name: fa fa-heart
+    animated: false
+    color: "#ff0000"
+  copyright: oneone
+  powered: false
+
+post_meta:
+  updated_at:
+    enable: false
+    another_day: true
+
+word_count:
+  enable: false
+
+reading_time:
+  enable: false
+
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+  unescape: false
+  preload: false
+
+motion:
+  enable: true
+  async: false
+  transition:
+    menu_item: fadeInDown
+    post_block: fadeIn
+    post_header: fadeInDown
+    post_body: fadeInDown
+    coll_header: fadeInLeft
+    sidebar: fadeInUp
+
+pace:
+  enable: true
+  color: green
+  theme: minimal
+
+# Live2D 看板娘
+# 通过自定义 JS 注入实现（见 source/_data/body-end.njk）
+
+# busuanzi 访问统计
+busuanzi_count:
+  enable: false
+
+# 自定义 footer 注入（运行时间、live2d）
+custom_file_path:
+  footer: source/_data/footer.njk
+  bodyEnd: source/_data/body-end.njk
